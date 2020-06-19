@@ -1,21 +1,29 @@
 {
-    "compilerOptions": {
-        "lib": [
-            "DOM",
-            "WebWorker"
-        ],
-        "target": "ES2016",
-        "allowSyntheticDefaultImports": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "moduleResolution": "node",
-        "skipLibCheck": true,
-        "strict": true
-    },
-    "include": [
-        "src/**/*"
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "WebWorker"
     ],
-    "exclude": [
-        "node_modules"
+    "target": "ES2016",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "strict": true,
+    "typeRoots": [
+      "typings",
+      "node_modules/@types"
+    ],
+    "types": [
+      "@sapper",
+      "cypress-svelte-unit-test"
     ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
