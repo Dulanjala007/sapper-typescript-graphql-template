@@ -8,7 +8,7 @@ import babel from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
 import config from "sapper/config/rollup";
 import pkg from "./package.json";
-import { preprocess as sveltePreprocessConfig } from "./svelte.config";
+const { preprocess :sveltePreprocessConfig } = reqire("./svelte.config");
 
 const preprocess = [
 	sveltePreprocessConfig,
